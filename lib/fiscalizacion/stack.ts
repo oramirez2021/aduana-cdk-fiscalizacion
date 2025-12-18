@@ -113,7 +113,7 @@ export class FiscalizacionStack extends cdk.Stack {
     const apiName = generateResourceName('api');
     this.api = new apigateway.RestApi(this, 'FiscalizacionApiGateway', {
       restApiName: apiName,
-      description: `API Gateway for ${project}-${client}-${useCase} in ${stage} environment`,
+      description: `API Gateway for ${project}-${client}-${useCase} in ${stage} environment FISCALIZACIONES`,
       deployOptions: {
         stageName: stage,
         loggingLevel: apigateway.MethodLoggingLevel.OFF,
